@@ -1,0 +1,11 @@
+7 html pages
+------------------------------------------------------------
+1. Home page - index.html
+2. About us
+3. Contact us
+4. booking
+5. Services
+6. Attractions
+7. Features / Reviews
+
+-------------------------------------------------------------

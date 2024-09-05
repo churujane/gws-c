@@ -1,0 +1,87 @@
+/* Style the container for the "Contact Us" page */
+.contact-us {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+.social-media-nav{
+    padding: 20px;
+}
+  /* Style the "Contact Information" section */
+  .contact-info {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info h2 {
+    font-size: 1.5rem;
+  }
+  
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-info li {
+    margin: 10px 0;
+  }
+  
+  .contact-info i {
+    margin-right: 15px;
+    font-size: 1.5rem;
+    padding: 5px;
+    
+  }
+  
+  /* Style the social media icons */
+  .contact-info .social-media i {
+    color: #03254c; /* Customize the icon color */
+  }
+  
+  /* Style the "Send us a Message" section */
+  .message-form {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .message-form h2 {
+    font-size: 1.5rem;
+  }
+  
+  .form-group {
+    margin: 10px 0;
+  }
+  
+  .input-field,
+  .textarea-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    /* box-shadow: 2px 2px 4px #00000050; */
+  }
+  
+  .textarea-field {
+    resize: vertical;
+  }
+  
+  .submit-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  /* Add more custom styling as needed */
+  
+
+  /* Style the centered <div> */
+
+  

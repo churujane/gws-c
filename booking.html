@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GWS&C-Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div>
+                <h1>GWS&C</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="attraction.html">Attractions</a></li>
+                    <li><a href="contactus.html">Contact us</a></li>
+                </ul>
+            </nav>
+            <div>
+                <button class="book-now"><a href="booking.html">Book Now</a></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="section-heading">
+            <h3>Book your experience</h3>
+        </div>
+        <form action="">
+            <div class="input-section">
+                <p>Personal details</p>
+                <div class="an-input">
+                    <label for="name">Name</label>
+                    <input type="text" id="namebox">
+                </div>
+                <div class="an-input">
+                    <label for="phonenumber">Phone Number</label>
+                    <input type="text" id="phonenumberbox">
+                </div>
+                <div class="an-input">
+                    <label for="email">Email</label>
+                    <input type="text" id="emailbox">
+                </div>
+                <div class="an-input">
+                    <label for="hometown">Home town</label>
+                    <input type="text" id="hometownbox">
+                </div>
+                <div class="an-input">
+                    <label for="gender">Gender</label>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="malebox">
+                    <label for="male">Female</label>
+                    <input type="radio" name="gender" id="femalebox">
+                </div>
+            </div>
+
+            <div class="input-section">
+                <p>Package</p>
+                <div class="an-input">
+                    <label for="entrydate">Date of entry</label>
+                    <input type="date" id="entrydatebox">
+                </div>
+                <div class="an-input">
+                    <label for="numberofdays">Number of people</label>
+                    <input type="number" id="numberofpeoplebox">
+                </div>
+
+                <div class="an-input">
+                    <label for="site">Site</label>
+                    <select name="site" id="sitebox">
+                        <option value="nairobiwaters">Nairobi Waters</option>
+                        <option value="kasaranisports">Kasarani sports</option>
+                        <option value="nakurulounge">Nakuru Lounge</option>
+                        <option value="maasaimaradrive">Maasai Mara Drive</option>
+                    </select>
+                </div>
+
+                <div class="an-input">
+                    <label for="package">Package</label>
+                    <select name="package" id="packagebox">
+                        <option value="basic">Basic (Ksh. 4000/day)</option>
+                        <option value="standard">Standard (Ksh. 6000/day)</option>
+                        <option value="premium">Premium (Ksh 8000/day)</option>
+                    </select>
+                </div>
+                
+                <div class="an-input">
+                    <label for="numberofdays">Number of days</label>
+                    <input type="number" id="numberofdaysbox">
+                </div>
+            </div>
+
+            <div class="input-section">
+                <button type="submit" id="bookbutton">Book spots</button>
+            </div>
+        </form>
+    </main>
+
+    <div class="overlay" id="confirmdetails" style="display: none;">
+        <div class="popup">
+            <div>
+                <div class="popup-title">
+                    <h2>Confirm the following details</h2>
+                </div>
+                <p>Name: <span id="namedisplay">Jane Churu</span></p>
+                <p>Phone Number: <span id="phonenumberdisplay">0756453645</span></p>
+                <p>Email: <span id="emaildisplay">jane@gmail.com</span></p>
+                <p>Home town: <span id="hometowndisplay">Nairobi</span></p>
+                <p>Gender: <span id="genderdisplay">Male</span></p>
+                <p>Date to get in: <span id="entrydatedisplay">June 4, 2024</span></p>
+                <p>Number of people: <span id="numberofpeopledisplay">8</span></p>
+                <p>Site: <span id="sitedisplay">Nairobi waters</span></p>
+                <p>Package: <span id="packagedisplay"></span></p>
+                <p>Number of days: <span id="numberofdaysdisplay">5</span></p>
+                <div class="popup-buttons">
+                    <button id="canceldetailsbutton">Cancel</button>
+                    <button id="confirmdetailsbutton">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="bookingdetails" style="display: none;">
+        <div class="popup">
+
+            <div class="popup-title">
+                    <h2>Booked Successfully!</h2>
+                </div>
+            <p>Ticket Number: <span id="ticketdisplay"> 132456</span></p>
+            <p>Pay Ksh <span id="amountdisplay"> 4000 </span> to paybill 247247</p>
+            <p>Use your ticket number as the account number</p>
+            <p>Produce the ticket at the reception</p>
+            <div class="popup-buttons">
+                <button id="bookedokbutton">ok</button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-info-wrapper">
+            <div class="foooter-info">
+                <p class="foooter-info-heading">Locations</p>
+                <ul>
+                    <li>Nairobi</li>
+                    <li>Kampala</li>
+                    <li>London</li>
+                    <li>Mauritious</li>
+                </ul>
+            </div>
+            <div class="foooter-info">
+                <p class="foooter-info-heading">Links</p>
+                <ul>
+                    <li>Nairobi</li>
+                    <li>Kampala</li>
+                    <li>London</li>
+                    <li>Mauritious</li>
+                </ul>
+            </div>
+            <div class="foooter-info">
+                <p class="foooter-info-heading">Book</p>
+                <ul>
+                    <li>Nairobi</li>
+                    <li>Kampala</li>
+                    <li>London</li>
+                    <li>Mauritious</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="booking.js"></script>
+</body>
+</html>
